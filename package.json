@@ -83,5 +83,10 @@
     "prettier:check": "prettier --check --config ./.prettierrc.yaml \"**/*.{js,json,md,sol,ts}\"",
     "test": "hardhat test",
     "typechain": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat typechain"
+  },
+  "dependencies": {
+    "@aave/governance-v2": "^1.0.0",
+    "@aave/protocol-v2": "^1.0.1",
+    "@openzeppelin/contracts": "^4.4.0"
   }
 }

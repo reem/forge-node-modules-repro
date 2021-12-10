@@ -5,6 +5,33 @@ __metadata:
   version: 5
   cacheKey: 8
 
+"@aave/aave-token@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@aave/aave-token@npm:1.0.4"
+  dependencies:
+    tmp-promise: ^3.0.2
+  checksum: d04791200264f942569de98ab7f70b94e2cffcb540425159e811030673500bda0e6b05b631a2dbbadd28bce48cc13d9bf58f89bdb354209a14e6fb2dbc8ff8c0
+  languageName: node
+  linkType: hard
+
+"@aave/governance-v2@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@aave/governance-v2@npm:1.0.0"
+  dependencies:
+    "@aave/aave-token": ^1.0.4
+  checksum: a35ae4c6dbe0cf85e17d1fa3fe5966390223cd11a6a4861507f37e2224a3278c6d291f7d953b87cd2b59f975cabd6bbc52a411565d02cfc6295a8f1054008f0a
+  languageName: node
+  linkType: hard
+
+"@aave/protocol-v2@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@aave/protocol-v2@npm:1.0.1"
+  dependencies:
+    tmp-promise: ^3.0.2
+  checksum: 9fb81748ebd57e42f0e1332ba6b5ef49d7184c1e98ba017617b5741f830705024194e7c1874afc517fdb126f2a900eb281bbdbf1b36e10e20c3a42ac654dd9be
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:^7.0.0":
   version: 7.12.13
   resolution: "@babel/code-frame@npm:7.12.13"
@@ -1561,10 +1588,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@openzeppelin/contracts@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "@openzeppelin/contracts@npm:4.4.0"
+  checksum: 55565943fff7b52de2e11f0095a37f14d15ed3054e7febe52cbfe86a9c1ef5e6bb45641cbb6480ef2ff2c1663e46bea7863b741b3ab417ea59c6b8aee28188d8
+  languageName: node
+  linkType: hard
+
 "@paulrberg/solidity-template@workspace:.":
   version: 0.0.0-use.local
   resolution: "@paulrberg/solidity-template@workspace:."
   dependencies:
+    "@aave/governance-v2": ^1.0.0
+    "@aave/protocol-v2": ^1.0.1
     "@codechecks/client": ^0.1.12
     "@commitlint/cli": ^14.1.0
     "@commitlint/config-conventional": ^14.1.0
@@ -1575,6 +1611,7 @@ __metadata:
     "@ethersproject/providers": ^5.5.0
     "@nomiclabs/hardhat-ethers": ^2.0.2
     "@nomiclabs/hardhat-waffle": ^2.0.1
+    "@openzeppelin/contracts": ^4.4.0
     "@typechain/ethers-v5": ^8.0.5
     "@typechain/hardhat": ^3.0.0
     "@types/chai": ^4.2.22
@@ -12694,7 +12731,7 @@ resolve@1.1.x:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^3.0.2":
+"rimraf@npm:^3.0.0, rimraf@npm:^3.0.2":
   version: 3.0.2
   resolution: "rimraf@npm:3.0.2"
   dependencies:
@@ -14105,6 +14142,15 @@ resolve@1.1.x:
   languageName: node
   linkType: hard
 
+"tmp-promise@npm:^3.0.2":
+  version: 3.0.3
+  resolution: "tmp-promise@npm:3.0.3"
+  dependencies:
+    tmp: ^0.2.0
+  checksum: f854f5307dcee6455927ec3da9398f139897faf715c5c6dcee6d9471ae85136983ea06662eba2edf2533bdcb0fca66d16648e79e14381e30c7fb20be9c1aa62c
+  languageName: node
+  linkType: hard
+
 "tmp@npm:0.0.33, tmp@npm:^0.0.33":
   version: 0.0.33
   resolution: "tmp@npm:0.0.33"
@@ -14120,6 +14166,15 @@ resolve@1.1.x:
   dependencies:
     rimraf: ^2.6.3
   checksum: 6bab8431de9d245d4264bd8cd6bb216f9d22f179f935dada92a11d1315572c8eb7c3334201e00594b4708608bd536fad3a63bfb037e7804d827d66aa53a1afcd
+  languageName: node
+  linkType: hard
+
+"tmp@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "tmp@npm:0.2.1"
+  dependencies:
+    rimraf: ^3.0.0
+  checksum: 8b1214654182575124498c87ca986ac53dc76ff36e8f0e0b67139a8d221eaecfdec108c0e6ec54d76f49f1f72ab9325500b246f562b926f85bcdfca8bf35df9e
   languageName: node
   linkType: hard
 
